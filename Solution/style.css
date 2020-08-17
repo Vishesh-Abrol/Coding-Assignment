@@ -1,0 +1,106 @@
+<style>
+    
+    #row
+    {
+      width: 100%;
+      position: relative;
+     } 
+ 
+    #row section
+   {  
+   	position: relative;
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: yellow;
+   }
+   
+   section div
+   {
+   	background-color: red;
+   	width: 150px;
+   	font-size: 125%;
+   	text-align: center;
+   }                         
+    
+    h1
+    {
+      text-align: center;
+      font-size: 175%;
+      margin-bottom: 40px;
+    }
+
+    p
+   {
+ 	text-align: center;
+ 	width: 90%;
+ 	height: 200px; 	
+	margin-left: auto;
+ 	margin-right: auto;      
+ 	color: blue;
+ 	margin-top: 30px;
+ 	font-family: Work Sans;  
+   }    
+
+   @media(min-width: 992px)
+     {
+       .col-lg-4
+       {
+         float: left;
+         width: 32%;
+         border : 1px solid black; 
+      }
+    
+        section div
+        {
+      	  position: absolute;
+            right:0;
+   	    }
+     }
+
+   	 @media(min-width: 768px) and (max-width: 991px) 
+     {
+       .col-md-6
+       {
+       	float: left;
+       	 width: 48.5%;
+       	 border : 1px solid black; 
+       }
+       .col-md-12
+       {
+       	float: left;
+       	 width: 98.5%;
+       	 border : 1px solid black; 
+       }
+
+       .col-md-6 div
+        {
+      	  position: absolute;
+            right:0;
+   	    }
+
+   	    .col-md-12 div
+        {
+      	  position: absolute;
+            right:0;
+   	    
+   	    }
+     }
+
+     @media(max-width: 767px)
+     {
+      .col-sm-12
+      {
+       float: left;
+       width: 100%;
+       border : 1px solid black; 
+      }
+
+       section div
+        {
+      	  position: absolute; 
+   	      right:0;
+   	    }
+     } 
+</style>
